@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        td{
+            background-color: aquamarine;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse; border-color: black;" align="center" cellpadding="5">
+        <caption style="font-size: 25px; color: green;"><strong>Phiếu đăng ký tham gia chương trình khuyến mãi</strong></caption>
+        <tr>
+            <td style="text-align: left;">Họ và tên</td>
+            <td>
+                <input type="text" size="50" >
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">
+                Địa chỉ
+            </td>
+            <td>
+                <input type="text" size="40">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Điện thoại</td>
+            <td>
+                <input type="text" size="20">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Phái</td>
+            <td>
+                <input id="nam" name="gioitinh" type="radio" value="Nam">
+                <label for="nam">Nam</label>
+                <input id="nữ" name="gioitinh" type="radio" value="Nữ">
+                <label for="nữ">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;;">Nghề nghiệp</td>
+            <td>
+                <select>
+                    <option>Giáo viên</option>
+                    <option>Nhân viên văn phòng</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Chọn sản phẩm tham gia</td>
+            <td>
+                <input list="product">
+                <datalist id="product">
+                    <option>Kem đánh răng</option>
+                    <option>Bột giặt</option>
+                    <option>Dầu gội đầu</option>
+                    <option>Sữa tắm</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Số người dự đoán tham gia</td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="Đồng ý">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
